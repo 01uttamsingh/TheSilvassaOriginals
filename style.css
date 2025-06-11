@@ -1,0 +1,284 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+/* Header */
+header {
+  background: #fff;
+  padding: 15px 5%;
+  border-bottom: 2px solid #000;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+}
+nav a {
+  margin-left: 25px;
+  font-weight: 600;
+  color: #000;
+}
+nav a:hover {
+  color: #ff0000;
+}
+.brand-name {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+
+/* Hero Section */
+.hero {
+  background: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 25px;
+  background: #ff0000;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background: #b30000;
+}
+
+/* Service Rows */
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 10%;
+  background: #f4f4f4;
+}
+.service-row:nth-child(even) {
+  background: #e0e0e0;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.service-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.service-text {
+  flex: 1;
+  padding: 20px;
+}
+.service-text h3 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+/* Order Section */
+.order {
+  background: #fff;
+  padding: 60px 10%;
+}
+.order h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000;
+}
+.order ol {
+  padding-left: 20px;
+}
+.order li {
+  margin-bottom: 12px;
+}
+.note {
+  text-align: center;
+  font-style: italic;
+  margin: 25px 0;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/* About Section */
+.about-section,
+.founder-section,
+.partners-section,
+.social-section,
+.clients-section {
+  padding: 50px 10%;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+.about-section h2,
+.founder-section h3,
+.partners-section h3,
+.social-section h3,
+.clients-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+
+/* Founder Section */
+.founder-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.founder-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+.founder-info h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Partner Logos */
+.partner-logos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.partner-logos img {
+  width: 100px;
+  height: auto;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2rem;
+}
+.social-icons a {
+  color: #000;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #ff0000;
+}
+
+/* Clients Section */
+.clients-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.clients-section li {
+  margin-bottom: 8px;
+}
+.contact-page {
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.address-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.address-section li {
+  margin-bottom: 8px;
+}
+
+.social-section {
+  margin-top: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+  font-size: 2rem;
+}
+
+.social-icons a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff0000;
+}
+
+.contact-page {
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.address-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.address-section li {
+  margin-bottom: 8px;
+}
+
+.social-section {
+  margin-top: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
+  font-size: 2rem;
+}
+
+.social-icons a {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff0000;
+}
