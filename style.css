@@ -581,9 +581,19 @@ header{
 
 }
 @media(max-width: 991px){
-    header{
-        padding: 18px 4%;
-    }
+    header {
+    padding: 15px 40px;
+  }
+  .navbar a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+   .logo img {
+    height: 45px;
+  }
     section{
         padding: 50px 4%;
     }
@@ -593,6 +603,9 @@ header{
     .home-text{
         padding: 0 5%;
     }
+    .profile span {
+    display: none; /* Hide profile name on very small screens */
+  }
     .swiper-button-next, .swiper-button-prev{
         margin: 0;
     }
@@ -620,28 +633,25 @@ header{
     }
 
     .navbar {
-    position: absolute;
-    top: -500px; /* hide initially */
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    padding: 1rem 0;
-    transition: 0.3s ease;
-    border-radius: 10px;
-    z-index: 999;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: var(--bg-color);
+        padding: 4rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: top 0.3s ease;
+        z-index: 1000;
     }
 
     .navbar.active {
-        top: 100%;
-        display: flex;
+         display: flex;
+         top: 100%;
     }
+
 
     .home-text h1{
         font-size: 1.5rem;
@@ -697,7 +707,7 @@ header{
         object-fit: contain;
     }
 }
-@media(max-width: 370px){
+@media(max-width: 375px){
     .logo{
         font-size: 1rem;
     }
@@ -727,10 +737,34 @@ header{
     .categories-container{
         gap: 1.5rem;
     }
+    .home {
+    padding-top: 120px; /* Header height + spacing */
+  }
+  .container {
+    padding-top: 120px; /* Ensures content doesn't hide behind header */
+  }
 }
 @media (max-width: 768px) {
   .home {
     margin-top: 80px; /* For mobile */
+  }
+  #menu-icon {
+    display: block; /* Show menu icon for mobile nav */
+  }
+  
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    
+  }
+
+  header {
+    padding: 15px 20px;
   }
   .container img {
     width: 100%;
@@ -750,6 +784,28 @@ header{
   .logo {
     margin-left: 0;
   }
+  .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: var(--bg-color);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: top 0.3s ease;
+        z-index: 1000;
+    }
+    .navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem;
+   }
+
+   
 }
 
 
@@ -785,9 +841,28 @@ header{
     gap: 5px;
   }
 
-  .navbar {
-    top: 60px;
+  .home {
+    padding-top: 120px; /* Header height + spacing */
   }
+  .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: var(--bg-color);
+        padding: 4rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: top 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+         display: flex;
+         top: 100%;
+    }
 }
 
 
