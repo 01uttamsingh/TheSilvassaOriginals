@@ -613,9 +613,55 @@ header{
     color: var(--text-color);
     padding: 0.5rem;
    }
+   .logo {
+    font-size: 1rem;
+    }
 
-   
+    .profile span {
+    display: none;
+    }
+
+    .profile img {
+    width: 30px;
+    height: 30px;
+    } 
+    .footer-box a:hover{
+        color: var(--green-color);
+        transition: 0.2s all linear;
+    }
 }
 
+@media (max-width: 991px) {
+  .container,
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-text,
+  .about-text {
+    padding: 2rem 1rem;
+  }
+
+  .container img,
+  .about img {
+    width: 80%;
+    margin: 0 auto;
+    position: static;
+  }
+
+  .categories-container,
+  .products-container,
+  .custom-containers,
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .heading {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 

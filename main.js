@@ -11,24 +11,18 @@ var swiper = new Swiper(".home", {
       });
 
 // Toggle Menu Icon
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
-  menu.classList.toggle('fa-x'); // change icon
-  navbar.classList.toggle('active'); // show/hide navbar
-};
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.querySelector(".navbar");
 
-// Hide navbar when scrolling
-window.onscroll = () => {
-  menu.classList.remove('fa-x');
-  navbar.classList.remove('active');
-};
-
-// Close navbar when clicking any link (especially on mobile)
-document.querySelectorAll('.navbar a').forEach(link => {
-  link.addEventListener('click', () => {
-    navbar.classList.remove('active');
-    menu.classList.remove('fa-x');
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    menuIcon.classList.toggle("fa-times"); 
   });
-});
+
+  document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("active");
+      menuIcon.classList.remove("fa-times");
+    });
+  });
